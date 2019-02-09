@@ -1,0 +1,42 @@
+<div class="card">
+<div class="card-header">
+  Login Angular Task!
+</div>
+
+<div class="card-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>LoggedIn User Details</h3>
+        <div class="row">
+          <div class="col-md-6">
+           Username : <strong>{{this.sessionData.userName}}</strong>
+          </div>
+          <div class="col-md-6">
+              Name : <strong>{{this.sessionData.firstName}}</strong>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+             Email : <strong>{{this.sessionData.emailGroup.email}}</strong>
+            </div>
+            <div class="col-md-6">
+                Mobile Number : <strong>{{this.sessionData.phone}}</strong>
+               </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+               Address : <strong>{{this.sessionData.addressFormControl}}</strong>
+              </div>
+              <div class="col-md-6">
+                  Password : <strong>{{this.sessionData.passWordGroup.passwordControl}}</strong>
+                 </div>
+            </div>
+            <div style="margin-top:1rem">
+                <button class="btn btn-custom" (click)="logoutUser()">Sign Up Another user</button>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
